@@ -28,9 +28,9 @@ app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
 
 // Home route handler
-app.get("/", (req, res) => {
-    res.send("Server is running-2");
-});
+// app.get("/", (req, res) => {
+//     res.send("Server is running-2");
+// });
 if(process.env.NODE_ENV==="production"){
     app.use(express.static(path.join(__dirname,"../frontend/dist")));
 }
