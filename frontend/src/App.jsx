@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { Loader } from "lucide-react";
 import { Toaster } from "react-hot-toast";
 import { useThemeStore } from "./Store/useThemeStore.js";
-import { useAuthStore } from "./store/useAuthStore.js";
+import { useAuthStore } from "./Store/useAuthStore.js";
 
 const App = () => {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore();
