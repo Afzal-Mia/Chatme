@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useChatStore } from "../store/useChatStore";
+import { useChatStore } from "../Store/useChatStore";
 import { Users } from "lucide-react";
 import SidebarSkeleton from "./skeletons/SidebarSkeleton";
-import { useAuthStore } from "../store/useAuthStore";
+import { useAuthStore } from "../Store/useAuthStore";
 
 
 const Sidebar = () => {

@@ -1,10 +1,10 @@
-import { useChatStore } from "../store/useChatStore.js";
+import { useChatStore } from "../Store/useChatStore.js";
 import { useEffect, useRef } from "react";
 import MessageInput from "./MessageInput"
 import ChatHeader from "./ChatHeader ";
 import MessageSkeleton from "./MessageSkeleton";
 import { formatMessageTime } from "../lib/utlis";
-import { useAuthStore } from "../store/useAuthStore.js";
+import { useAuthStore } from "../Store/useAuthStore.js";
 
 const ChatContainer = () => {
   const {messages,getMessages,isMessagesLoading,selectedUser,subscribeToMessages,unsubscribeFromMessages } =useChatStore();

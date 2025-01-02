@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
-import { useAuthStore } from "../store/useAuthStore.js";
+import { useAuthStore } from "../Store/useAuthStore.js";
 import { Eye, EyeOff, Loader2, Loader2Icon, Lock, LockIcon, Mail, MessageSquare } from "lucide-react";
 
 const LoginPage = () => {
