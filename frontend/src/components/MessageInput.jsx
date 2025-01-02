@@ -69,7 +69,7 @@ const MessageInput = () => {
         </div>
       )}
 
-      {/* <form onSubmit={handleSendMessage} className="flex items-center gap-2">
+      <form onSubmit={handleSendMessage} className="flex items-center gap-2">
         <div className="flex-1 flex gap-2">
           <input
             type="text"
@@ -102,56 +102,7 @@ const MessageInput = () => {
         >
           <Send size={22} />
         </button>
-      </form> */}
-
-<form
-  onSubmit={handleSendMessage}
-  className="flex flex-wrap items-center gap-2 sm:gap-3 p-2 bg-gray-100 rounded-lg shadow-md"
->
-  {/* Input and Image Upload Section */}
-  <div className="flex-1 flex gap-2 items-center">
-    <input
-      type="text"
-      className="flex-grow input input-bordered rounded-lg input-sm sm:input-md"
-      placeholder="Type a message..."
-      value={text}
-      onChange={(e) => setText(e.target.value)}
-    />
-
-    {/* File Input (Hidden) */}
-    <input
-      type="file"
-      accept="image/*"
-      className="hidden"
-      ref={fileInputRef}
-      onChange={handleImageChange}
-    />
-
-    {/* Image Button */}
-    <button
-      type="button"
-      className={`btn btn-circle hidden sm:flex ${
-        imagePreview ? "text-emerald-500" : "text-zinc-400"
-      }`}
-      onClick={() => fileInputRef.current?.click()}
-      aria-label="Upload image"
-    >
-      <Image size={20} />
-    </button>
-  </div>
-
-  {/* Send Button */}
-  <button
-    type="submit"
-    className="btn btn-sm sm:btn-md btn-circle"
-    disabled={!text.trim() && !imagePreview}
-    aria-label="Send message"
-  >
-    <Send size={22} />
-  </button>
-</form>
-
-      
+      </form>
     </div>
   );
 };
